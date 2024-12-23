@@ -1,0 +1,140 @@
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+header * {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+/* nav */
+
+.title{
+    font-family: "Georgia", sans-serif;
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.subtitle{
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a{
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+    text-decoration-color: #F1CDB3;
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
+}
+
+  /*  pets section  */
+
+.pet .btn-learn{
+    padding: 15px 45px 15px 45px;
+    color: #292929;
+    display: inline-block;
+    font-size: 17px;
+    font-family: "Georgia", sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+.pet:hover{
+    cursor: pointer;
+}
+
+.pet .btn-learn:hover{
+    background-color: #FDDCC4;
+    border: 2px solid #FDDCC4;
+}
+
+.arrow:hover{
+    background-color: #FDDCC4;
+    border: 2px solid #FDDCC4;
+}
+
+
+/* footer */
+
+footer{
+    background-image: url(../images/start-screen-gradient-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: auto; 
+    padding: 40px 0;
+    height: 380px;
+}
+
+footer .footer-content{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    align-items: stretch;
+    justify-content: start; 
+}
+
+footer .footer-content h3{
+    color: #FFFFFF;
+    font-size: 35px;
+    line-height: 45.5px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+footer .footer-content .info{
+    display: flex;
+    align-items: center;
+    justify-content: start; 
+    gap: 10px;
+}
+
+footer .footer-content h4{
+    color: #F1CDB3;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+footer .footer-content .image{
+    align-self: flex-end;
+}
+
+footer .footer-content .image img{
+    vertical-align: middle;
+    margin-bottom: 0;
+}

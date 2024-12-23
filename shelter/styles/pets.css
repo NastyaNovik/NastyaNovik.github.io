@@ -1,0 +1,144 @@
+/*  nav  */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    background: #FFFFFF;
+    padding-top: 30px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.title{
+    color: #545454;
+}
+
+.subtitle{
+    color: #545454;
+}
+
+nav ul li a{
+    color: #545454;
+}
+
+nav ul li a.active {
+    color: #292929;
+}
+
+nav ul li a:hover{
+    color: #292929;
+}
+
+
+  /* our-pets-section  */
+
+.our-pets-section{
+    background: #F6F6F6;
+    padding: 50px;
+    height: 1350px;
+    width: 100%;
+}
+.our-pets-section .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.our-pets-section h3{
+    color: #545454;
+    font-family: "Georgia", sans-serif;
+    font-size: 35px;
+    line-height: 45.5px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.our-pets-section .pets{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.our-pets-section .pets img{
+    width: 100%;
+}
+
+.our-pets-section .pet{
+    background: #FAFAFA;
+    border-radius: 9px;
+    margin: 30px 35px;
+    width: 270px;
+    text-align: center; 
+}
+
+.our-pets-section .pet p{
+    color: #545454;
+    font-family: "Georgia", sans-serif;
+    font-size: 20px;
+    line-height: 22.72px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.our-pets-section .arrow,
+.our-pets-section .pagination .page-number {
+    border: 2px solid #FDDCC4;
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 15px 15px;
+}
+
+.our-pets-section .pagination .page-number{
+    color: #292929;
+    font-family: "Georgia", sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.our-pets-section .pagination{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.our-pets-section .page-number{
+    background: #FDDCC4;
+}
+
+.our-pets-section .arrow.left{
+    content: url(../images/left-arrow.png);
+    pointer-events: none;
+    border: 2px solid #CDCDCD;
+    opacity: 0.5;
+}
+
+.our-pets-section .arrow.right{
+    content: url(../images/right-arrow.png);
+}
+
+.our-pets-section .arrow.double-left{
+    content: url(../images/left.png);
+    pointer-events: none;
+    border: 2px solid #CDCDCD;
+    opacity: 0.5;
+}
+
+.our-pets-section .arrow.double-right{
+    content: url(../images/right.png);
+}

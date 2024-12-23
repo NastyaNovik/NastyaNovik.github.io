@@ -1,0 +1,354 @@
+header{
+    background-image: url(../images/start-screen-gradient-background.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Georgia", sans-serif;
+}
+
+.btn-color{
+    padding: 15px 45px 15px 45px;
+    border-radius: 100px;
+    color: #292929;
+    display: inline-block;
+    font-size: 17px;
+    background: #F1CDB3;
+    font-family: "Georgia", sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+    /*nav*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    position: fixed;
+    top: 30px;
+}
+
+.title{
+    color: #F1CDB3;
+}
+
+.subtitle{
+    color: #FFFFFF;
+}
+
+nav ul li a{
+    color: #CDCDCD;
+}
+
+nav ul li a:hover{
+    color: #FAFAFA;
+}
+
+nav ul li a.active {
+    color: #FAFAFA;
+}
+
+    /*nav*/
+
+    /*intro-section*/
+
+.intro-section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-section .left{
+    width: 460px;
+}
+
+.intro-section .left h2{
+    color: #FFFFFF;
+    font-family: "Georgia", sans-serif;
+    font-size: 44px;
+    line-height: 57.2px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.intro-section .left p{
+    color: #CDCDCD;
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.intro-section .right{
+    align-self: flex-end;
+}
+
+.intro-section .right img{
+    height: 600px;
+    vertical-align: middle;
+}
+
+  /*intro-section*/
+
+
+section{
+    margin-top: 80px;
+}
+
+  /*about-section*/
+
+.about-section{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section .right{
+    width: 430px;
+    margin-right: 150px;
+}
+
+.about-section .left{
+    width: 300px;
+    margin-left: 150px;
+}
+
+.about-section .right h3{
+    color: #545454;
+    font-family: "Georgia", sans-serif;
+    font-size: 35px;
+    line-height: 45.5px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.about-section .right p{
+    color: #4C4C4C;
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+  /*pets-section*/
+
+.pets-section{
+    background: #F6F6F6;
+    padding: 60px;
+    height: 877px;
+    width: 100%;
+ 
+}
+.pets-section .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.pets-section h3{
+    color: #545454;
+    font-family: "Georgia", sans-serif;
+    font-size: 35px;
+    line-height: 45.5px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.pets-section .pets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pets-section .pets img{
+    width: 100%;
+}
+
+.pets-section .pet{
+    background: #FAFAFA;
+    border-radius: 9px;
+    margin: 30px 35px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.pets-section .pet p{
+    color: #545454;
+    font-family: "Georgia", sans-serif;
+    font-size: 20px;
+    line-height: 22.72px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.pets-section .btn-rest{
+    padding: 15px 45px 15px 45px;
+    color: #292929;
+    display: inline-block;
+    font-size: 17px;
+    font-family: "Georgia", sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 100px;
+    background: #F1CDB3;
+    margin-top: 30px;
+}
+
+.pets-section .arrow{
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 15px 15px;
+}
+
+.pets-section .arrow.left{
+    content: url(../images/left-arrow.png);
+}
+
+.pets-section .arrow.right{
+    content: url(../images/right-arrow.png);
+}
+
+  /*help-section*/
+
+.help-section{
+    display: flex;
+    height: 450px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.help-section h3{
+    color: #545454;
+    font-family: "Georgia", sans-serif;
+    font-size: 35px;
+    line-height: 45.5px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.help-section .help-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    width: 1000px;
+}
+
+.help-section .help-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.help-section .help-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.help-section .help-item h4{
+    color: #545454;
+    font-family: "Georgia", sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* donation-section*/
+
+.donation-section{
+    display: flex;
+    height: 430px;
+    background: #F6F6F6;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 250px;
+}
+
+.donation-section .right{
+    width: 380px;
+    margin-right: 250px;
+}
+
+.donation-section .left{
+    width: 300px;
+    margin-left: 250px;
+}
+
+.donation-section h3{
+    color: #545454;
+    font-size: 35px;
+    line-height: 45.5px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.donation-section h5{
+    color: #545454;
+    font-size: 15px;
+    line-height: 16.5px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.donation-section p{
+    font-family: "Arial", sans-serif;
+    font-style: italic;
+    color: #B2B2B2;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.donation-section .credit-card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #F1CDB3;
+    width: 340px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+
+.donation-section .credit-card h4{
+    color: #545454;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+}
