@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-color{
-    padding: 15px 45px 15px 45px;
+    padding: 15px 45px;
     border-radius: 100px;
     color: #292929;
     display: inline-block;
