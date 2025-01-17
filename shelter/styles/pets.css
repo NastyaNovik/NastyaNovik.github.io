@@ -4,11 +4,10 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
     background: #FFFFFF;
-    padding-top: 30px;
-    height: 80px;
-    margin-bottom: 30px;
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .title{
@@ -36,15 +35,9 @@ nav ul li a:hover{
 
 .our-pets-section{
     background: #F6F6F6;
-    padding: 50px;
-    height: 1350px;
+    padding: 5%;
+    min-height: 100vh;
     width: 100%;
-}
-.our-pets-section .wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; 
 }
 
 .our-pets-section h3{
@@ -58,21 +51,28 @@ nav ul li a:hover{
 }
 
 .our-pets-section .pets{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%
 }
 
-.our-pets-section .pets img{
-    width: 100%;
+.our-pets-section .wrapper{
+    max-width: 100%;
 }
 
 .our-pets-section .pet{
     background: #FAFAFA;
     border-radius: 9px;
-    margin: 30px 35px;
-    width: 270px;
     text-align: center; 
+    max-width: 100%;
+    margin-bottom: 5%;
+}
+
+.our-pets-section .pet img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .our-pets-section .pet p{
@@ -114,7 +114,6 @@ nav ul li a:hover{
     gap: 10px;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
 }
 
 .our-pets-section .page-number{
@@ -141,4 +140,39 @@ nav ul li a:hover{
 
 .our-pets-section .arrow.double-right{
     content: url(../images/right.png);
+}
+
+
+@media(max-width: 1000px){
+
+    .our-pets-section .pet:nth-child(n+7) {
+        display: none;
+    }
+}
+
+@media(max-width: 630px){
+
+    .our-pets-section .pet:nth-child(n+4) {
+        display: none;
+    }
+}
+
+@media(max-width: 620px){
+
+    .menu-icon span{
+        background-color: #000000;
+    }
+
+    nav ul li a{
+        color: #CDCDCD;
+    }
+    
+    nav ul li a:hover{
+        color: #FAFAFA;
+    }
+    
+    nav ul li a.active {
+        color: #FAFAFA;
+    }
+
 }
