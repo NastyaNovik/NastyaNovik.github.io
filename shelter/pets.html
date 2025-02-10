@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/pets.css">
         <script src="scripts/main.js" defer></script>
+        <script type="module" src="scripts/petsPage.js"></script>
     </head>
 
     <body>
@@ -49,48 +50,32 @@
           <h3>
             Our friends who <br /> are looking for a house
           </h3>
-          <div class="pets">
-            <div class="pet">
-              <img src="images/pets-katrine.png" alt="">
-              <p>Katrine</p>
-              <a href="" class="btn-learn">Learn more</a>
-            </div>
-            <div class="pet">
-              <img src="images/pets-jennifer.png" alt="">
-              <p>Jennifer</p>
-              <a href="" class="btn-learn">Learn more</a>
-            </div>
-            <div class="pet">
-              <img src="images/pets-woody.png" alt="">
-              <p>Woody</p>
-              <a href="" class="btn-learn">Learn more</a>
-            </div>
-            <div class="pet">
-              <img src="images/pets-katrine (1).png" alt="">
-              <p>Sophia</p>
-              <a href="" class="btn-learn">Learn more</a>
-            </div>
-            <div class="pet">
-              <img src="images/pets-timmy.png" alt="">
-              <p>Timmy</p>
-              <a href="" class="btn-learn">Learn more</a>
-            </div>
-            <div class="pet">
-              <img src="images/pets-charly.png" alt="">
-              <p>Charly</p>
-              <a href="" class="btn-learn">Learn more</a>
-            </div>
-            <div class="pet">
-              <img src="images/pets-scarlet.png" alt="">
-              <p>Scarlett</p>
-              <a href="" class="btn-learn">Learn more</a>
-            </div>
-            <div class="pet">
-              <img src="images/pets-katrine (2).png" alt="">
-              <p>Freddie</p>
-              <a href="" class="btn-learn">Learn more</a>
-            </div>
+          <div class="pets"></div>
+
+            <div id="popup" class="popup">
+              <div class="popup-window">
+                  <div class="popup-content">
+                      <div class="left">
+                          <img id="popup-img" src="" alt="">
+                      </div>
+                      <div class="right">
+                          <h3 id="popup-name"></h3>
+                          <h4>
+                              <span id="popup-type"></span> - <span id="popup-breed"></span>
+                          </h4>
+                          <p id="popup-desc"></p>
+                          <ul class="popup-list">
+                              <li><strong>Age:</strong> <span id="popup-age"></span></li>
+                              <li><strong>Inoculations:</strong> <span id="popup-inoculations"></span></li>
+                              <li><strong>Diseases:</strong> <span id="popup-diseases"></span></li>
+                              <li><strong>Parasites:</strong> <span id="popup-parasites"></span></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <span class="close">&times;</span>
+              </div>
           </div>
+
           <div class="pagination">
             <a href="" class="arrow double-left">arrow</a>
             <a href="" class="arrow left">arrow</a>

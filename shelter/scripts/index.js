@@ -8,7 +8,7 @@ const rightArrow = document.querySelector('.arrow.right');
 const itemsToDisplay = 3;
 let currentIndex = 0;
 
-function updateSlider() {
+function load() {
     slider.innerHTML = '';
     const startIndex = currentIndex;
     const endIndex = Math.min(currentIndex + itemsToDisplay, pets.length);
@@ -39,7 +39,7 @@ function updateSlider() {
     }
 }
 
-updateSlider();
+load();
 
 leftArrow.addEventListener('click', (e) => {
     e.preventDefault();
@@ -48,7 +48,7 @@ leftArrow.addEventListener('click', (e) => {
     } else {
         currentIndex = pets.length - itemsToDisplay;
     }
-    updateSlider();
+    load();
 });
 
 rightArrow.addEventListener('click', (e) => {
@@ -58,7 +58,7 @@ rightArrow.addEventListener('click', (e) => {
     } else {
         currentIndex = 0;
     }
-    updateSlider();
+    load();
 });
 
 closeBtn.addEventListener("click", () => {
