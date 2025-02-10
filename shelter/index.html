@@ -6,6 +6,8 @@
         <title>Home</title>
         <link rel="stylesheet" href="styles/index.css">
         <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/main.js" defer></script>
+        <script type="module" src="scripts/petsService.js"></script>
     </head>
     <body>
         <header> 
@@ -90,27 +92,35 @@
                 </h3>
                     <div class="pets">
                         <a href="" class="arrow left">arrow</a>
-                        <div class="slider">
-                            <div class="pet">
-                                <img src="images/pets-katrine.png" alt="">
-                                <p>Katrine</p>
-                                <a href="" class="btn-learn">Learn more</a>
-                            </div>
-                            <div class="pet">
-                                <img src="images/pets-jennifer.png" alt="">
-                                <p>Jennifer</p>
-                                <a href="" class="btn-learn">Learn more</a>
-                            </div>
-                            <div class="pet">
-                                <img src="images/pets-woody.png" alt="">
-                                <p>Woody</p>
-                                <a href="" class="btn-learn">Learn more</a>
-                            </div>
-                        </div>
+                        <div class="slider"></div>
                         <a href="" class="arrow right">arrow</a>
                     </div>
 
                     <a href="" class="btn-rest">Get to know the rest</a>
+
+                    <div id="popup" class="popup">
+                        <div class="popup-window">
+                            <div class="popup-content">
+                                <div class="left">
+                                    <img id="popup-img" src="" alt="">
+                                </div>
+                                <div class="right">
+                                    <h3 id="popup-name"></h3>
+                                    <h4>
+                                        <span id="popup-type"></span> - <span id="popup-breed"></span>
+                                    </h4>
+                                    <p id="popup-desc"></p>
+                                    <ul class="popup-list">
+                                        <li><strong>Age:</strong> <span id="popup-age"></span></li>
+                                        <li><strong>Inoculations:</strong> <span id="popup-inoculations"></span></li>
+                                        <li><strong>Diseases:</strong> <span id="popup-diseases"></span></li>
+                                        <li><strong>Parasites:</strong> <span id="popup-parasites"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
             </section>
 
             <section id="help" class="help-section">

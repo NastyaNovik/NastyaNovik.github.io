@@ -164,12 +164,13 @@ nav ul li a.active {
     align-items: center;
     justify-content: space-evenly;
     position: relative; 
+    overflow: hidden;
 }
 
 .pets-section .pets .slider{
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 20%;
 }
 
 .pets-section .pet{
@@ -192,7 +193,7 @@ nav ul li a.active {
 }
 
 .pets-section .btn-rest{
-    padding: 15px 45px 15px 45px;
+    padding: 15px 45px;
     color: #292929;
     display: inline-block;
     font-size: 17px;
@@ -218,10 +219,14 @@ nav ul li a.active {
 
 .pets-section .arrow.left{
     content: url(../images/left-arrow.png);
+    position: absolute;
+    left: 0;
 }
 
 .pets-section .arrow.right{
     content: url(../images/right-arrow.png);
+    position: absolute;
+    right: 0;
 }
 
   /*help-section*/
@@ -291,7 +296,7 @@ nav ul li a.active {
     align-items: center;
     justify-content: space-evenly;
     gap: 10%;
-    padding: 5%;
+    padding: 4%;
 }
 
 .donation-section .right{
@@ -442,6 +447,7 @@ nav ul li a.active {
         grid-template-rows: auto auto;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
+        padding-bottom: 15%;
     }
 
     .pets .slider {
