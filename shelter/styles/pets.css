@@ -48,13 +48,14 @@ nav ul li a:hover{
     font-weight: 400;
     text-align: center;
     letter-spacing: 1px;
+    margin-bottom: 5%;
 }
 
 .our-pets-section .pets{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5%
+    gap: 10%
 }
 
 .our-pets-section .wrapper{
@@ -123,7 +124,6 @@ nav ul li a:hover{
 .our-pets-section .arrow.left{
     content: url(../images/left-arrow.png);
     pointer-events: none;
-    border: 2px solid #CDCDCD;
     opacity: 0.5;
 }
 
@@ -134,7 +134,6 @@ nav ul li a:hover{
 .our-pets-section .arrow.double-left{
     content: url(../images/left.png);
     pointer-events: none;
-    border: 2px solid #CDCDCD;
     opacity: 0.5;
 }
 
